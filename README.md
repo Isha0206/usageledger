@@ -54,7 +54,7 @@ pip install "usageledger[warc]"        # core + WARC reading + CLI
 pip install "usageledger[datatrove]"   # + datatrove pipeline blocks
 ```
 
-Until it's on PyPI, install from the source folder: `pip install -e ".[warc]"`.
+Or install the latest code straight from GitHub: `pip install "usageledger[warc] @ git+https://github.com/Isha0206/usageledger.git"`.
 
 ## Try it in one command
 
