@@ -242,7 +242,11 @@ def main(argv: list[str] | None = None) -> int:
     m.set_defaults(func=_cmd_report)
 
     args = p.parse_args(argv)
-    return args.func(args)
+    try:
+        return args.func(args)
+    except ImportError as exc:  # an optional extra is not installed
+        print(f"usageledger: {exc}", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":  # pragma: no cover

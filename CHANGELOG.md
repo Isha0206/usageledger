@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.2 — 2026-10-28
+
+- README: badges and a clearer Install section (what each `pip install` option gives you).
+- `demo` and `scan` without the `[warc]` extra now print a one-line hint instead of a traceback.
+- Package metadata lists the supported Python versions (3.10–3.13).
+
 ## 0.3.1 — 2026-10-28
 
 - The User-Agent sent by `check` and `survey` now links to the GitHub repository, so site owners can see what the tool is.

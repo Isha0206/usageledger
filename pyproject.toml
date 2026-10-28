@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "usageledger"
-version = "0.3.1"
+version = "0.3.2"
 description = "Carry AI usage preferences (IETF AIPREF Content-Usage) and provenance through web-data pipelines."
 readme = "README.md"
 license = "Apache-2.0"
@@ -17,6 +17,10 @@ classifiers = [
   "Intended Audience :: Science/Research",
   "Intended Audience :: Developers",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Topic :: Internet :: WWW/HTTP",
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]

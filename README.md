@@ -1,5 +1,10 @@
 # usageledger
 
+[![PyPI](https://img.shields.io/pypi/v/usageledger)](https://pypi.org/project/usageledger/)
+[![Python](https://img.shields.io/pypi/pyversions/usageledger)](https://pypi.org/project/usageledger/)
+[![tests](https://github.com/Isha0206/usageledger/actions/workflows/tests.yml/badge.svg)](https://github.com/Isha0206/usageledger/actions/workflows/tests.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+
 **Carry AI usage preferences and provenance through web-data pipelines.**
 
 Websites can now say *"you may crawl this, but don't train AI on it"* with the IETF's new `Content-Usage` signal, in robots.txt or an HTTP header. The preference is only visible at crawl time. By the time a page is cleaned, deduplicated, mixed into a corpus and trained on months later, nobody remembers which site it came from or what the owner allowed.
@@ -49,12 +54,36 @@ No runtime dependencies for the core library. `warcio` is needed to read WARC fi
 
 ## Install
 
+usageledger is on [PyPI](https://pypi.org/project/usageledger/) and needs Python 3.10 or newer.
+
 ```bash
-pip install "usageledger[warc]"        # core + WARC reading + CLI
-pip install "usageledger[datatrove]"   # + datatrove pipeline blocks
+pip install "usageledger[warc]"
 ```
 
-Or install the latest code straight from GitHub: `pip install "usageledger[warc] @ git+https://github.com/Isha0206/usageledger.git"`.
+That is the recommended install: it covers everything in this README except the datatrove blocks. Keep the quotes, because some shells (zsh, the macOS default) treat the square brackets specially.
+
+| Install | What you get |
+|---|---|
+| `pip install usageledger` | The library, plus the `check`, `survey`, `header` and `robots` commands. No dependencies at all. |
+| `pip install "usageledger[warc]"` | Also reading WARC files: the `scan` and `demo` commands. |
+| `pip install "usageledger[datatrove]"` | Also the datatrove pipeline blocks. |
+
+Check that it worked:
+
+```bash
+usageledger --version
+usageledger demo
+```
+
+It's best to install into a virtual environment, so it stays separate from other projects:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate          # on Windows: .venv\Scripts\activate
+pip install "usageledger[warc]"
+```
+
+To upgrade later, run `pip install --upgrade "usageledger[warc]"`. To try changes that are not released yet, install straight from GitHub: `pip install "usageledger[warc] @ git+https://github.com/Isha0206/usageledger.git"`.
 
 ## Try it in one command
 

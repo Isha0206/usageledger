@@ -92,8 +92,11 @@ PAGES = [
 
 
 def _write(path: str, records) -> None:
-    from warcio.statusandheaders import StatusAndHeaders
-    from warcio.warcwriter import WARCWriter
+    try:
+        from warcio.statusandheaders import StatusAndHeaders
+        from warcio.warcwriter import WARCWriter
+    except ImportError as exc:
+        raise ImportError("The demo writes WARC files, which needs warcio: pip install 'usageledger[warc]'") from exc
 
     with open(path, "wb") as fh:
         writer = WARCWriter(fh, gzip=True)
