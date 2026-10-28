@@ -9,7 +9,7 @@ Quick start::
     record = evaluate(url, headers=headers, html=html, policy=Policy(purpose="train-ai"))
 """
 
-__version__ = "0.3.0"
+__version__ = "0.3.1"
 
 from .vocab import (  # noqa: E402
     DEFAULT_VOCAB,

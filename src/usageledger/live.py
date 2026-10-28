@@ -28,7 +28,7 @@ from .warc import Page
 __all__ = ["USER_AGENT", "PRODUCT_TOKEN", "AI_CRAWLERS", "Fetch", "CheckResult", "fetch", "check_url", "format_result"]
 
 PRODUCT_TOKEN = "usageledger"
-USER_AGENT = f"{PRODUCT_TOKEN}/{__version__} (AI usage-preference checker; one request per URL)"
+USER_AGENT = f"{PRODUCT_TOKEN}/{__version__} (+https://github.com/Isha0206/usageledger; AI usage-preference checker)"
 MAX_PAGE_BYTES = 5 * 1024 * 1024
 TIMEOUT = 15
 MAX_REDIRECTS = 5

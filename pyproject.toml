@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "usageledger"
-version = "0.3.0"
+version = "0.3.1"
 description = "Carry AI usage preferences (IETF AIPREF Content-Usage) and provenance through web-data pipelines."
 readme = "README.md"
 license = "Apache-2.0"
@@ -31,6 +31,8 @@ dev = ["pytest>=8", "warcio>=1.7"]
 usageledger = "usageledger.cli:main"
 
 [project.urls]
+Homepage = "https://github.com/Isha0206/usageledger"
+Issues = "https://github.com/Isha0206/usageledger/issues"
 "IETF AIPREF vocabulary draft" = "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/"
 "IETF AIPREF attachment draft" = "https://datatracker.ietf.org/doc/draft-ietf-aipref-attach/"
 

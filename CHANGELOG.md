@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 — 2026-10-28
+
+- The User-Agent sent by `check` and `survey` now links to the GitHub repository, so site owners can see what the tool is.
+- Package metadata links to the repository and issue tracker.
+
 ## 0.3.0 — 2026-10-28
 
 - `usageledger survey sites.txt`: polite sequential checks of a site list, a CSV with one row per site, and a Markdown summary by category (crawler-blocking posture, share blocking each crawler, adoption of each usage signal, per-site table).
