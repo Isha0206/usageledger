@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "usageledger"
+version = "0.3.0"
+description = "Carry AI usage preferences (IETF AIPREF Content-Usage) and provenance through web-data pipelines."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Isha Bhatia" }]
+keywords = ["aipref", "content-usage", "robots.txt", "provenance", "common-crawl", "llm", "pretraining", "opt-out", "tdmrep"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.optional-dependencies]
+warc = ["warcio>=1.7"]
+datatrove = ["datatrove>=0.4", "warcio>=1.7", "faust-cchardet", "python-magic", "regex", "orjson"]
+dev = ["pytest>=8", "warcio>=1.7"]
+
+[project.scripts]
+usageledger = "usageledger.cli:main"
+
+[project.urls]
+"IETF AIPREF vocabulary draft" = "https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/"
+"IETF AIPREF attachment draft" = "https://datatracker.ietf.org/doc/draft-ietf-aipref-attach/"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/usageledger"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

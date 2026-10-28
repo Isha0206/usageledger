@@ -1,0 +1,67 @@
+# Starter list for `usageledger survey`. One site per line, then a category.
+# Homepages are enough: robots.txt rules and response headers are site-wide on
+# almost every site. Edit freely.
+
+# Swiss news
+www.nzz.ch                news-ch
+www.tagesanzeiger.ch      news-ch
+www.20min.ch              news-ch
+www.blick.ch              news-ch
+www.srf.ch                news-ch
+www.watson.ch             news-ch
+www.letemps.ch            news-ch
+www.rts.ch                news-ch
+www.rsi.ch                news-ch
+www.swissinfo.ch          news-ch
+www.aargauerzeitung.ch    news-ch
+www.luzernerzeitung.ch    news-ch
+www.bernerzeitung.ch      news-ch
+www.handelszeitung.ch     news-ch
+www.republik.ch           news-ch
+www.woz.ch                news-ch
+www.24heures.ch           news-ch
+www.tdg.ch                news-ch
+www.nau.ch                news-ch
+www.cash.ch               news-ch
+
+# Swiss universities
+www.ethz.ch               university-ch
+www.epfl.ch               university-ch
+www.uzh.ch                university-ch
+www.zhaw.ch               university-ch
+www.unibas.ch             university-ch
+www.unibe.ch              university-ch
+www.unige.ch              university-ch
+www.unil.ch               university-ch
+www.unisg.ch              university-ch
+www.unifr.ch              university-ch
+www.usi.ch                university-ch
+www.fhnw.ch               university-ch
+www.hslu.ch               university-ch
+www.bfh.ch                university-ch
+
+# International news
+www.nytimes.com           news-intl
+www.theguardian.com       news-intl
+www.bbc.com               news-intl
+www.reuters.com           news-intl
+www.washingtonpost.com    news-intl
+www.ft.com                news-intl
+www.economist.com         news-intl
+www.cnn.com               news-intl
+apnews.com                news-intl
+www.spiegel.de            news-intl
+www.zeit.de               news-intl
+www.faz.net               news-intl
+www.lemonde.fr            news-intl
+www.elpais.com            news-intl
+www.corriere.it           news-intl
+
+# Reference and platforms
+en.wikipedia.org          reference
+de.wikipedia.org          reference
+stackoverflow.com         reference
+github.com                reference
+arxiv.org                 reference
+www.reddit.com            reference
+medium.com                reference
